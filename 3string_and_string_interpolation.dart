@@ -11,7 +11,9 @@ void main() {
   String s3 = 'It\'s easy';
   String s4 = "It's easy";
 
-  String s5 = 'This is going to be a very long String. '
+  String s5 = 'This is going to be a very long String. \''
+      /* No need to add plus sign like java to concatenate. dart will assume anything as string 
+  untill it reaches to unquote and semi-colon*/
       'This is just a sample String demo in Dart Programming Language';
 
   // String Interpolation : Use ["My name is $name"] instead of ["My name is " + name]
@@ -19,6 +21,8 @@ void main() {
 
   print("My name is $name");
   print("The number of characters in String Kevin is ${name.length}");
+  /*Only variable can be interpolated with a $ sign prefixed.
+  Expressions need to be wrapped up with curly braces.*/
 
   int l = 20;
   int b = 10;
